@@ -110,14 +110,6 @@ public class Edge extends JavaPlugin
         final int pluginId = 15257;
         CustomConfig.createAuthConfig();
         this.setupProxy();
-        Auth.sendRequest();
-        Auth.requestLicenseType(type -> this.licenseType = type);
-        if (this.purchaseActive != 1 || this.licenceUsername.isEmpty() || this.licenceEmail.isEmpty() || !this.product.contains("EdgeAC")) {
-            Messages.sendInvalid();
-            this.getPluginLoader().disablePlugin(this);
-            return;
-        }
-        Messages.sendValidAuth(this.licenceEmail, this.licenceUsername);
         System.setProperty("com.viaversion.handlePingsAsInvAcknowledgements", "true");
         (this.pledge = new TickEnd()).start();
         CustomConfig.createZeroTrust();
