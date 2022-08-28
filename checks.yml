@@ -1,0 +1,765 @@
+# -----------------------------------------------------------------
+#   _____   _                     _
+#  / ____| | |                   | |
+# | |      | |__     ___    ___  | | __  ___
+# | |      | '_ \   / _ \  / __| | |/ / / __|
+# | |____  | | | | |  __/ | (__  |   <  \__ \
+#  \_____| |_| |_|  \___|  \___| |_|\_\ |___/
+# -----------------------------------------------------------------
+
+settings:
+  globalcmds:
+    - 'ban %player% [Edge] Unfair Advantage'
+    - 'broadcast &7[&b&l!&7] &c%player% &7was punished for cheating!'
+
+check:
+  #Checks for attack distance modifications
+  AttackA:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 5:kick %player% [Edge] Unfair Advantage
+    settings:
+      range: 3.01
+      sight-detect: true #Entity hitbox expansion
+      sight-threshold: 3
+      sight-decay: 0.25
+  AttackB:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 1:kick %player% [Edge] Unfair Advantage
+
+  #Checks for automated actions / advantages
+  KillAuraA:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 1:kick %player% [Edge] Unfair Advantage
+  KillAuraB:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  KillAuraBZ:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: false
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  KillAuraC:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  KillAuraD:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  KillAuraD3:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  KillAuraDX:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+
+  AimBotA:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  AimBotB:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  AimBotC:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  AimBotD:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  AimBotE:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+    settings:
+      threshold: 6
+  AimBotF:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  AimBotG:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  AimBotH:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  AimBotI:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  AimBotJ:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+    settings:
+      threshold: 9
+
+  ClickAnalysisA:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 10:kick %player% [Edge] Unfair Advantage
+    settings:
+      max-cps: 22
+  ClickAnalysisB:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  ClickAnalysisC:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  ClickAnalysisD:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  ClickAnalysisE:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+
+  VelocityA:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 10:kick %player% [Edge] Unfair Advantage
+  VelocityB:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 10:kick %player% [Edge] Unfair Advantage
+
+  #Detects block placement advantages
+  ScaffoldA:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 5:kick %player% [Edge] Unfair Advantage
+  ScaffoldB:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  ScaffoldC:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  ScaffoldD:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  ScaffoldE:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  ScaffoldF:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  ScaffoldJ:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  ScaffoldA2:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+
+  #Checks for movement based advantages
+
+  FlightA:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  FlightB:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 8:kick %player% [Edge] Unfair Advantage
+    settings:
+      threshold: 2
+      decay: 0.15
+  FlightC:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+
+  SpeedA:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+    settings:
+      threshold: 15
+      decay: 1
+  SpeedB:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  SpeedC:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+    settings:
+      threshold: 6
+  SpeedD:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+    settings:
+      threshold: 5
+      decay: 0.75
+  SpeedE:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+    settings:
+      threshold: 5
+      decay: 1
+
+  InvalidA:
+    state: true
+    dragdown: true
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 5:kick %player% [Edge] Unfair Advantage
+  InvalidB:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  InvalidC:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  InvalidD:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  InvalidE:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  InvalidF:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: false
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  InvalidG:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: false
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  InvalidH:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: false
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+
+  TimerA: #Basic=(Timer)
+    state: true
+    dragdown: false
+    custom:
+      name: 'Timer'
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  TimerB: #Basic=(Timer [2])
+    state: true
+    dragdown: false
+    custom:
+      name: 'Timer'
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+
+  BadPacketA1:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 1:kick %player% [Edge] Unfair Advantage
+  BadPacketB1:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 1:kick %player% [Edge] Unfair Advantage
+  BadPacketC1:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 1:kick %player% [Edge] Unfair Advantage
+  BadPacketD1:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 1:kick %player% [Edge] Unfair Advantage
+  BadPacketA:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 1:kick %player% [Edge] Unfair Advantage
+  BadPacketB:
+    state: true
+    dragdown: false
+    custom:
+      name: 'AutoTool'
+      type: 'A'
+    violations:
+      enabled: true
+      threshold:
+        - 1:kick %player% [Edge] Unfair Advantage
+  BadPacketC:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  BadPacketD:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  BadPacketE:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  BadPacketF:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  BadPacketG:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  BadPacketH:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  BadPacketI:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  BadPacketJ:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  BadPacketK:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  BadPacketL:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  BadPacketM:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  BadPacketN:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  BadPacketO:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
