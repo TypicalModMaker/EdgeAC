@@ -362,7 +362,17 @@ check:
       enabled: true
       threshold:
         - 20:kick %player% [Edge] Unfair Advantage
-  ScaffoldA2:
+  Scaffold2:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  ScaffoldX:
     state: true
     dragdown: false
     custom:
@@ -754,6 +764,16 @@ check:
       threshold:
         - 20:kick %player% [Edge] Unfair Advantage
   BadPacketO:
+    state: true
+    dragdown: false
+    custom:
+      name: ''
+      type: ''
+    violations:
+      enabled: true
+      threshold:
+        - 20:kick %player% [Edge] Unfair Advantage
+  JesusA:
     state: true
     dragdown: false
     custom:

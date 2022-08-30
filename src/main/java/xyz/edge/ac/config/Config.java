@@ -5,6 +5,8 @@ import java.lang.reflect.Field;
 import java.util.Iterator;
 import java.util.ArrayList;
 import java.io.File;
+
+import org.bukkit.Bukkit;
 import xyz.edge.api.check.DetectionData;
 import xyz.edge.api.license.LicenseType;
 import xyz.edge.ac.checks.checkloader.CheckLoader;

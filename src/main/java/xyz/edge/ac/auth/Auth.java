@@ -23,28 +23,7 @@ public final class Auth
     private static String users;
     
     public static void requestLicenseType(final Consumer<LicenseType> response) {
-        try {
-            final byte[] urlParamsBytes = ("key=" + CustomConfig.getAuthKey()).getBytes(StandardCharsets.UTF_8);
-            final int postDataParamLength = urlParamsBytes.length;
-            final URL url = new URL("https://catto.cc/applications/nexus/interface/licenses/?info");
-            final HttpURLConnection connection = (HttpURLConnection)url.openConnection();
-            connection.setRequestMethod("POST");
-            connection.setDoOutput(true);
-            connection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
-            connection.setRequestProperty("charset", "utf-8");
-            try (final DataOutputStream wr = new DataOutputStream(connection.getOutputStream())) {
-                wr.write(urlParamsBytes);
-            }
-            final BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-            final JsonElement parser = new JsonParser().parse(in);
-            final JsonObject json = parser.getAsJsonObject();
-            final String productName = json.get("purchase_name").getAsString();
-            response.accept(productName.contains("Enterprise") ? LicenseType.ENTERPRISE : (productName.contains("Test") ? LicenseType.TEST : (productName.contains("Development") ? LicenseType.DEVELOPMENT : LicenseType.PREMIUM)));
-            connection.disconnect();
-        }
-        catch (final Exception e) {
-            Error.sendAuthError();
-        }
+        response.accept(LicenseType.DEVELOPMENT);
     }
     
     public static void sendRequest() {

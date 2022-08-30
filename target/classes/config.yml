@@ -16,5 +16,5 @@ plugin:
 storage:
   method: MONGO
   mongo:
-    URI: "mongodb://admin:aP%4055word@1.1.1.1"
+    URI: "mongodb://@127.0.0.1"
     database: "Edge"
