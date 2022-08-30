@@ -1,0 +1,64 @@
+# -----------------------------------------------------------------
+#  __  __
+# |  \/  |
+# | \  / | ___  ___ ___  __ _  __ _  ___  ___
+# | |\/| |/ _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+# | |  | |  __/\__ \__ \ (_| | (_| |  __/\__ \
+# |_|  |_|\___||___/___/\__,_|\__, |\___||___/
+#                              __/ |
+#                             |___/
+# -----------------------------------------------------------------
+global:
+  prefix: "&8[&bEdge&8] &c" #old: 8[&bEdge&8] &7• &c
+  console-only: "%prefix%&cThis command can only be used by console."
+  player-only: "%prefix%&cYou must be a player to perform this command."
+  permission: "&8[&bEdge&8] &7• &cPermission Denied! &7(&c%permission%&7)"
+  breaker: "&7&m--------------------------------"
+alerts:
+  enabled: "%prefix%&cEnabled Alerts"
+  disabled: "%prefix%&cDisabled Alerts"
+  message: "&C&k&l3&B %player% &7failed &b%check% &7(&b%type%&7) &cx%vl%"
+  proxy-message: "%prefix%&7(&b%server%&7) &c%player% &7has failed &c%check% Type %type% &7*%vl% %dev%"
+  dev: "&7(&4Dev&7)"
+  hover:
+    - "&7&m----------------------------"
+    - "&7» &bD=&7 %info%"
+    - "&7» &bI=&7 %debug%"
+    - "&7"
+    - "&7» &bTPS=&7 %tps% &bLatency=&7 %ping%ms"
+    - "&7» &c&lClick to run &7'&c/teleport %player%&7'"
+    - "&7&m----------------------------"
+logs:
+  layout: '&8[&b%time%&8] &7• &c%check% Check %type% &8(&7%info%&8)'
+  title: '%prefix%&cLogs for &7%player% &7(%page%/%max_pages%)'
+  nologs: '&cNo logs for this player!'
+  no-results: 'No results left!'
+  no-entries: 'No entries found!'
+crash:
+  kick-reason: "Disconnected"
+  alert: "&8[&bEdge&8] &7• &c%player% was removed for crashing the server with &b%reason%&c."
+bedrock:
+  reason: "You cannot use this version of Minecraft!"
+client-join:
+  message: '&8[&b&lEdge&8] &b%player% &7joined with &b%brand%'
+  hover:
+    - "&7&m--------------------------------"
+    - "&bIP: &7%ip%"
+    - "&bHostName: &7%host%"
+    - "&bProvider: &7%provider%"
+    - "&bVersion: &7%version%"
+    - "&bBrand: &7%brand%"
+    - ""
+    - "&cClick to view player information!"
+    - "&7&m--------------------------------"
+command:
+  - "&c"
+  - "&b&lCommands for %plugin% &7(&cv%version%&7)"
+  - "&7» &b/%command% alerts &7↣ &fToggle alerts"
+  - "&7» &b/%command% player (player) &7↣ &fPlayer utils"
+  - "&7» &b/%command% routerfry (player) &7↣ &fRouterFry a player"
+  - "&7» &b/%command% logs (player) [page] &7↣ &fCheck violation logs"
+  - "&7» &b/%command% menu &7↣ &fOpen menu"
+  - "&7» &b/%command% reboot &7↣ &fReboot %plugin%"
+  - "&7» &c/%command% clearlogs (player) &c(CONSOLE)"
+  - "&c"

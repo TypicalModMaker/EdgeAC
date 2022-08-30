@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.github.retrooper:packetevents:3b947e7b9a">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/retrooper/packetevents/3b947e7b9a/packetevents-3b947e7b9a.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/retrooper/packetevents/3b947e7b9a/packetevents-3b947e7b9a-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/retrooper/packetevents/3b947e7b9a/packetevents-3b947e7b9a-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

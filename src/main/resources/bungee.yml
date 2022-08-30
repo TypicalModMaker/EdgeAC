@@ -1,0 +1,7 @@
+name: EdgeProxy
+version: 1.01-Developmental
+website: edgeac.xyz
+author: ["RealTrippy"]
+description: ProxyAlerts for EdgeAntiCheat
+
+main: edgeproxy.edge.ac.EdgeProxy

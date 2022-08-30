@@ -1,0 +1,58 @@
+# -----------------------------------------------------------------
+#   _____      _   _   _
+#  / ____|    | | | | (_)
+# | (___   ___| |_| |_ _ _ __   __ _ ___
+#  \___ \ / _ \ __| __| | '_ \ / _` / __|
+#  ____) |  __/ |_| |_| | | | | (_| \__ \
+# |_____/ \___|\__|\__|_|_| |_|\__, |___/
+#                               __/ |
+#                              |___/
+# -----------------------------------------------------------------
+
+settings:
+  proxy: false
+  servername: "server"
+  client-join-message: true
+  client-join-click-cmd: "%command% player %player%"
+  logs: true
+  logs-per-page: 8
+  alert-on-join: true
+  alert-delay: 0
+  alert-click-cmd: "tp %player%"
+  block-books: true
+
+ghostblock:
+  enabled: true
+  update: true
+  dragdown: true
+  ticks: 8
+
+bedrock:
+  enabled: true
+  kick: false
+  key: '.'
+
+warning:
+  enabled: true
+  remove: false
+  types:
+    clientbrand: true
+    isp: true
+    name: true
+    nulldata: true
+
+discord:
+  user: 'Edge AntiCheat'
+  alerts:
+    enabled: false
+    url: ''
+    thumbnail:
+      imagesize: '64'
+      imageservice: 'https://minotar.net/avatar/'
+    message:
+      title: 'Edge Alert'
+      message:
+        - '%player% failed %check%(%type%) [x%vl%]'
+        - ''
+        - 'Latency: %ping%(ms), Ticks: %tps%, Server: %server%'
+

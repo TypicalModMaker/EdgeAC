@@ -1,0 +1,20 @@
+plugin:
+  description:
+    name: Edge
+    version: 2.01
+    description: Edge to protect your server
+    authors:
+      - Preceding
+      - RealTrippy
+    website: https://www.edgeac.xyz
+  command:
+    name: edge
+    aliases:
+      - edgeac
+      - ac
+      - anticheat
+storage:
+  method: MONGO
+  mongo:
+    URI: "mongodb://admin:aP%4055word@1.1.1.1"
+    database: "Edge"
