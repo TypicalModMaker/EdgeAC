@@ -1,9 +1,0 @@
-name: Edge
-version: 2.02
-main: xyz.edge.ac.Edge
-website: edgeac.xyz
-authors: ["RealTrippy", "LegendaryOfCats", "Preceding"]
-api-version: 1.13
-softdepend:
-  - PlaceholderAPI
-description: Edge to protect your server
