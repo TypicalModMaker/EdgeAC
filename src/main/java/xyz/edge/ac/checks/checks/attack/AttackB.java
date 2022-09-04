@@ -28,7 +28,7 @@ public class AttackB extends EdgeCheck
                 if (vec3.isPresent()) {
                     final Vector3d hitbox = vec3.get();
                     this.debug("Tried to attack out of hitbox &8[&cX=" + Math.abs(hitbox.getX()) + " : Z=" + Math.abs(hitbox.getZ()) + " &7]");
-                    if (Math.abs(hitbox.getX()) > 0.4001 || Math.abs(hitbox.getZ()) > 0.4001) {
+                    if (Math.abs(hitbox.getX()) > 0.4001 || Math.abs(hitbox.getZ()) > 0.4001) { // Apparently he worked "hours" on this, or that's what he said to me :joy:
                         this.fail("Tried to attack out of hitbox", "X=" + Math.abs(hitbox.getX()) + " : Z=" + Math.abs(hitbox.getZ()));
                     }
                 }
