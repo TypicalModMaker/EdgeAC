@@ -8,16 +8,15 @@ public final class Messages
     public static void sendValidAuth(final String email, final String user) {
         Bukkit.getConsoleSender().sendMessage("");
         Bukkit.getConsoleSender().sendMessage(ColorUtil.translate("&7&m-------------------------------------------------------------"));
-        Bukkit.getConsoleSender().sendMessage(ColorUtil.translate("&b  ______    _                     _____ "));
-        Bukkit.getConsoleSender().sendMessage(ColorUtil.translate("&b |  ____|  | |              /\\   / ____|"));
-        Bukkit.getConsoleSender().sendMessage(ColorUtil.translate("&b | |__   __| | __ _  ___   /  \\ | |     "));
-        Bukkit.getConsoleSender().sendMessage(ColorUtil.translate("&b |  __| / _` |/ _` |/ _ \\ / /\\ \\| |     "));
-        Bukkit.getConsoleSender().sendMessage(ColorUtil.translate("&b | |___| (_| | (_| |  __// ____ \\ |____ "));
-        Bukkit.getConsoleSender().sendMessage(ColorUtil.translate("&b |______\\__,_|\\__, |\\___/_/    \\_\\_____|"));
-        Bukkit.getConsoleSender().sendMessage(ColorUtil.translate("&b               __/ |                    "));
-        Bukkit.getConsoleSender().sendMessage(ColorUtil.translate("&b              |___/                     "));
+        Bukkit.getConsoleSender().sendMessage(ColorUtil.translate("&b   _____ _    _     _          _____ "));
+        Bukkit.getConsoleSender().sendMessage(ColorUtil.translate("&b / ____| |  (_)   | |   /\\   / ____| "));
+        Bukkit.getConsoleSender().sendMessage(ColorUtil.translate("&b | (___ | | ___  __| |  /  \\ | | "));
+        Bukkit.getConsoleSender().sendMessage(ColorUtil.translate("&b \\___ \\| |/ / |/ _` | / /\\ \\| | "));
+        Bukkit.getConsoleSender().sendMessage(ColorUtil.translate("&b  ____) |   <| | (_| |/ ____ \\ | "));
+        Bukkit.getConsoleSender().sendMessage(ColorUtil.translate("&b |_____/|_|\\_\\_|\\__,_/_/    \\_\\_____| "));
         Bukkit.getConsoleSender().sendMessage(ColorUtil.translate(""));
-        Bukkit.getConsoleSender().sendMessage(ColorUtil.translate("&7| &cLicensed to " + email + " [" + user + "]"));
+        //Bukkit.getConsoleSender().sendMessage(ColorUtil.translate("&7| &cLicensed to " + email + " [" + user + "]"));
+        Bukkit.getConsoleSender().sendMessage(ColorUtil.translate("&cCracked by &45170 &c[&45170#5170&c]"));
         Bukkit.getConsoleSender().sendMessage(ColorUtil.translate(""));
         Bukkit.getConsoleSender().sendMessage(ColorUtil.translate("&7| &cYou are currently running latest version of &bEdge"));
         Bukkit.getConsoleSender().sendMessage(ColorUtil.translate("&7| &bIf you need any help don't hesitate to contact us at &7discord.edgeac.xyz"));

@@ -150,15 +150,18 @@ public final class CheckLoader
                 }
                 if (response == LicenseType.DEVELOPMENT) {
                     Bukkit.getConsoleSender().sendMessage(ColorUtil.translate(ChatColor.RED + "Successfully loaded a total of " + ChatColor.AQUA + CheckLoader.CHECKS.size() + ChatColor.RED + " check" + ((CheckLoader.CHECKS.size() == 1) ? "" : "s") + "!"));
-                    Bukkit.getConsoleSender().sendMessage(ColorUtil.translate(ChatColor.RED + "Thank you for being a developer of Edge!"));
+                    //Bukkit.getConsoleSender().sendMessage(ColorUtil.translate(ChatColor.RED + "Thank you for being a developer of Edge!"));
+                    Bukkit.getConsoleSender().sendMessage(ColorUtil.translate(ChatColor.RED + "Cracked by 5170."));
                 }
                 else if (enterpriseFailedChecks > 0) {
                     Bukkit.getConsoleSender().sendMessage(ColorUtil.translate(ChatColor.RED + "Failed to load " + ChatColor.AQUA + enterpriseFailedChecks + ChatColor.RED + " Enterprise check" + ((enterpriseFailedChecks == 1) ? "" : "s") + "!"));
-                    Bukkit.getConsoleSender().sendMessage(ColorUtil.translate(ChatColor.RED + "Upgrade to Enterprise to unlock full benefits of Edge."));
+                    //Bukkit.getConsoleSender().sendMessage(ColorUtil.translate(ChatColor.RED + "Upgrade to Enterprise to unlock full benefits of Edge."));
+                    Bukkit.getConsoleSender().sendMessage(ColorUtil.translate(ChatColor.RED + "Cracked by 5170."));
                 }
                 else if (loadedEnterpriseChecks > 0) {
                     Bukkit.getConsoleSender().sendMessage(ColorUtil.translate(ChatColor.GREEN + "Successfully loaded " + ChatColor.AQUA + loadedEnterpriseChecks + ChatColor.GREEN + " Enterprise check" + ((loadedEnterpriseChecks == 1) ? "" : "s") + "!"));
-                    Bukkit.getConsoleSender().sendMessage(ColorUtil.translate(ChatColor.GREEN + "Thanks for being an Edge Enterprise customer!"));
+                    //Bukkit.getConsoleSender().sendMessage(ColorUtil.translate(ChatColor.GREEN + "Thanks for being an Edge Enterprise customer!"));
+                    Bukkit.getConsoleSender().sendMessage(ColorUtil.translate(ChatColor.RED + "Cracked by 5170."));
                 }
             }
         });
